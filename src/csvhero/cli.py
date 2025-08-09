@@ -74,6 +74,7 @@ def scan(
     table.add_column("stat", justify="left", style="cyan")
     table.add_column("value", justify="right", style="white")
     table.add_row("csv files seen", str(len(csvs)))
+    table.add_row("rows across all csvs", str(sum(p.rows for p in profiles)))
     table.add_row("readmes written", str(written))
     table.add_row("readmes skipped (exists)", str(skipped))
     console.print(table)
