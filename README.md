@@ -23,8 +23,6 @@ Rows are counted excluding the header; columns are taken from the first row.
 
 ```
 
----
-
 ### notes on consistency & “shape”
 - “Rows” means **data rows only** (header excluded) for intuitive shapes.
 - README format is fixed via `format_shape_markdown(...)` so every file matches exactly.
